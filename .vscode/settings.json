@@ -1,0 +1,21 @@
+{
+	"editor.formatOnSave": false,
+	"editor.inlayHints.enabled": "offUnlessPressed",
+	"haxe.enableCompilationServer": false,
+	"haxe.configurations": [
+		{
+			"label": "Completion",
+			"args": [
+				"--class-path",
+				"src/",
+			],
+		},
+	],
+	"runOnSave.commands": [
+		{
+			"command": "workbench.action.tasks.build",
+			"runIn": "vscode",
+		},
+	],
+	"task.autoDetect": "off",
+}
