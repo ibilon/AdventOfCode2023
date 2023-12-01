@@ -11,7 +11,7 @@ function part1():Int {
 	var sum = 0;
 
 	for (row in data) {
-		var digits = row.split('').map(Std.parseInt).filter(value -> value != null);
+		var digits = row.split('').map(parseInt).filter(value -> value != null);
 		sum += digits[0] * 10 + digits[digits.length - 1];
 	}
 
@@ -35,7 +35,7 @@ function part2():Int {
 			}
 		}
 
-		sum += Std.parseInt(first + last);
+		sum += parseInt(first + last);
 	}
 
 	return sum;
@@ -43,7 +43,7 @@ function part2():Int {
 
 function find_digit(row:String, i:Int):String {
 	var at = row.charAt(i);
-	if (Std.parseInt(at) != null) {
+	if (parseInt(at) != null) {
 		return at;
 	}
 
