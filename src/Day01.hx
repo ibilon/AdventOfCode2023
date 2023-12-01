@@ -27,11 +27,11 @@ function part2():Int {
 
 		for (i in 0...row.length) {
 			if (first == null) {
-				first = find_digit(row, i);
+				first = findDigit(row, i);
 			}
 
 			if (last == null) {
-				last = find_digit(row, row.length - 1 - i);
+				last = findDigit(row, row.length - 1 - i);
 			}
 		}
 
@@ -41,7 +41,7 @@ function part2():Int {
 	return sum;
 }
 
-function find_digit(row:String, i:Int):String {
+function findDigit(row:String, i:Int):String {
 	var at = row.charAt(i);
 	if (parseInt(at) != null) {
 		return at;
