@@ -3,7 +3,7 @@
 		{
 			"label": "Run",
 			"type": "shell",
-			"command": "haxe --class-path src/ --run Day04",
+			"command": "haxe --class-path src/ --run Day05",
 			"problemMatcher": [],
 			"presentation": {
 				"clear": true,
